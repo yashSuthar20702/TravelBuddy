@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24B91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Expenses" representedClassName=".Expenses" syncable="YES">
+        <attribute name="espenseName" optional="YES" attributeType="String"/>
+        <attribute name="exoenseTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="expense" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="expenseId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="expenses" inverseEntity="Trip"/>
+    </entity>
+    <entity name="Trip" representedClassName=".Trip" syncable="YES">
+        <attribute name="destination" optional="YES" attributeType="String"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startingLocation" optional="YES" attributeType="String"/>
+        <attribute name="thingsToDo" optional="YES" attributeType="String"/>
+        <attribute name="tripId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripName" optional="YES" attributeType="String"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expenses" inverseName="trip" inverseEntity="Expenses"/>
+    </entity>
+</model>
