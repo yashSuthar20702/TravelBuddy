@@ -1,5 +1,3 @@
-Travel Buddy App
-
 Overview
 
 Travel Buddy is an iOS app that helps users plan trips, track locations, and manage expenses. The app is built using Swift and includes features like Core Data for saving data, GPS for maps, and APIs for weather updates. It is simple, easy to use, and visually appealing.
@@ -64,7 +62,7 @@ Installation
 
 Clone the repository:
 
-git clone [https://github.com/username/travel-buddy.git](https://github.com/yashThinkwik/TravelBuddy/)
+git clone https://github.com/yashThinkwik/TravelBuddy/
 
 Open the project in Xcode.
 
@@ -105,18 +103,3 @@ Weather API: For weather updates.
 Acknowledgements
 
 This app was created for the Fall 2024 PROG8471-iOS course at Conestoga College. Thank you to instructors and classmates for their support.
-
-License
-
-This project is licensed under the MIT License.
-
-Contact
-
-For questions or feedback:
-
-Name: Yash Suthar
-
-Email: yashraj20702.ca@gmail.com
-
-GitHub: yashThinkwik
-
